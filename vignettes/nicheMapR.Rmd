@@ -1,0 +1,17 @@
+---
+title: "tryNicheMapR"
+author: "Chathura"
+date: "January 11, 2017"
+output: html_document
+---
+
+
+```{r}
+install.packages("~/Downloads/NicheMapR_1.1.2.tar", repos = NULL, 
+  type = .Platform$pkgType)
+#install.packages(c("dismo", "geonames", "lattice", "raster", "XML", "readr", "rutils", "ncdf4"))
+library(NicheMapR,dismo,geonames,lattice,raster,XML,readr,rutils,ncdf4)
+data<-get.global.climate(folder="~/Documents/data_sets/")
+vignette("microclimate-model-tutorial", package = "NicheMapR")
+```
+
